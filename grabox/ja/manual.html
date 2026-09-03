@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Grabox 説明書</title>
+<style>:root{color-scheme:light dark}
+*{box-sizing:border-box}
+body{margin:0 auto;padding:2rem 1.25rem 4rem;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",sans-serif;line-height:1.9;max-width:44rem;background:#fff;color:#1a1a1a}
+@media(prefers-color-scheme:dark){body{background:#141414;color:#e8e8e8}}
+h1{font-size:1.6rem;line-height:1.4;margin:0 0 .5rem;padding-bottom:.75rem;border-bottom:2px solid currentColor}
+h2{font-size:1.15rem;margin:2.5rem 0 .75rem;padding-bottom:.4rem;border-bottom:1px solid rgba(128,128,128,.35)}
+p{margin:.9rem 0}
+.para{margin:.9rem 0 .9rem 1.7rem;text-indent:-1.7rem}
+.item{margin:.7rem 0 .7rem 2.8rem;text-indent:-1.4rem}
+.date{opacity:.7;font-size:.9rem}
+.note{opacity:.75;font-size:.92rem;border-left:3px solid rgba(128,128,128,.4);padding-left:.9rem;margin:1rem 0}
+ul{padding-left:1.4rem}
+li{margin:.6rem 0}
+a{color:inherit}
+hr{border:0;border-top:1px solid rgba(128,128,128,.3);margin:2.5rem 0}
+
+h3{font-size:1.02rem;margin:1.6rem 0 .5rem}
+code{font-size:.92em;background:rgba(128,128,128,.14);padding:.1em .35em;border-radius:.25em}
+li.sub{margin-left:1.2rem}
+</style>
+</head>
+<body>
+<h1>Grabox 説明書</h1>
+<p class="date">最終更新日: 2026年9月3日</p>
+<p>本書は，Grabox の使い方を手順の形で説明するものである．</p>
+<p>個々の機能の要点は，アプリ内の「設定 → 機能の説明」にも同じ内容を置いてある．</p>
+<hr>
+<h2>1. 画面の構成</h2>
+<p>画面の下に 4 つのタブがある．</p>
+<ul>
+<li><strong>ブラウザ</strong>　ページを見て，保存したいものを探す場所．</li>
+<li><strong>ダウンロード</strong>　取得の進み具合を見る場所．</li>
+<li><strong>ライブラリ</strong>　保存し終えたものを使う場所．</li>
+<li><strong>設定</strong>　動作を変える場所．</li>
+</ul>
+<p>保存の作業は，おおむね「ブラウザで探す → ダウンロードで待つ → ライブラリで使う」と左から右へ進む．</p>
+<h2>2. 動画を保存する</h2>
+<p class="para">1.　<strong>ブラウザ</strong>タブでページを開く．アドレス欄に URL を入れるか，検索語を入れる．</p>
+<p class="para">2.　動画のあるページまで進む．一覧ページではなく，<strong>その動画の再生ページ</strong>まで開くこと．</p>
+<p class="para">3.　画面下の<strong>「検出」</strong>を押す．</p>
+<p class="para">4.　そのページで配信されている動画・音声・画像の一覧が出る．</p>
+<p class="para">5.　保存したいものを選ぶ．画質が複数あるものは，ここで選べる．</p>
+<p class="para">6.　取得が始まる．進み具合は<strong>ダウンロード</strong>タブで見られる．</p>
+<p>取得はアプリを閉じても続く．終わると通知が出る．</p>
+<h3>2.1 一覧に何も出ないとき</h3>
+<p>次の順に試すとよい．</p>
+<p class="para">1.　<strong>ページを読み込み直してから，もう一度「検出」を押す．</strong></p>
+<p>   読み込みが終わる前に押すと，まだ何も見つからないことがある．</p>
+<p class="para">2.　<strong>動画を数秒再生してから押す．</strong></p>
+<p>   再生を始めて初めてアドレスが決まる配信がある．</p>
+<p class="para">3.　<strong>「デスクトップ表示」に切り替える．</strong></p>
+<p>   画面下のメニューから選ぶ．スマートフォン向けの表示では出てこないものが，</p>
+<p>   パソコン向けの表示では見つかることがある．</p>
+<p class="para">4.　<strong>設定 → 高度な設定 → 「ページ内のネットワーク監視」を有効にする．</strong></p>
+<p>   ページの通信を見て在りかを探すため，通常の検出で見つからないものが見つかる．</p>
+<p>それでも出ない場合は，§4 の方法が使えることがある．</p>
+<h2>3. 保存したものを使う</h2>
+<p><strong>ライブラリ</strong>タブに並ぶ．</p>
+<ul>
+<li>押すと再生する．通信の無い場所でも再生できる．</li>
+<li>表示は一覧と格子を切り替えられる．ファイル名で検索もできる．</li>
+<li>項目を長押しするか選択すると，次の操作ができる．</li>
+<li class="sub"><strong>共有</strong>　他のアプリへ渡す．ファイルアプリへの保存にも使う．</li>
+<li class="sub"><strong>写真に保存</strong>　写真アプリへ書き出す．初回に許可を尋ねる．</li>
+<li class="sub"><strong>音声を書き出す</strong>　動画から音声だけを取り出す．元のファイルは残る．</li>
+<li class="sub"><strong>削除</strong>　消す．<strong>元に戻せない．</strong></li>
+</ul>
+<h2>4. アドレスが取れない配信を保存する</h2>
+<p>一部のサイトは，動画を小片に分けて配信し，再生器の中で組み立てている．</p>
+<p>この方式では掴めるアドレスが存在しないため，§2 の手順では保存できない．</p>
+<p>このようなページでは，画面下のメニューに</p>
+<p><strong>「このページのメディアを収集 (blob:/MSE)」</strong>が出る．</p>
+<h3>4.1 手順</h3>
+<p class="para">1.　<strong>ページを開いた直後に，まず収集を始める．</strong></p>
+<p>   再生を進めてから始めると，途中までの分は入らない．</p>
+<p class="para">2.　動画を再生する．収集中は帯が出て，集まった量が表示される．</p>
+<p class="para">3.　<strong>そのページを開いたまま待つ．</strong> 再生が進んだ分だけ集まる．</p>
+<p class="para">4.　終わったら帯の「停止」を押し，「保存」を選ぶ．</p>
+<h3>4.2 知っておくべきこと</h3>
+<ul>
+<li><strong>実時間がかかる．</strong> 10 分の動画には 10 分かかる．収集中は再生を速めて短縮している．</li>
+<li><strong>他のアプリへ移ると止まる．</strong> 画面を消しても止まる．端末側がページの処理を止めるためで，避けられない．</li>
+<li><strong>途中から始めると音声が入らないことがある．</strong> ページが既に別の形式を選んだ後だと， 音声を受け取れない．ページを開き直して最初から始めるほうが確実である．</li>
+<li><strong>同時に 1 本だけ．</strong> 別のタブへ移ると，集めている最中のものは打ち切られる．</li>
+<li><strong>暗号化されている配信は集められない．</strong> 検知した時点で集めた分を破棄する．</li>
+</ul>
+<h2>5. ライブ配信を録画する</h2>
+<p>配信中のものを選ぶと，録画するかを尋ねる．</p>
+<p><strong>設定 → ライブ録画の上限時間</strong>に達すると，そこで区切って保存する．</p>
+<h2>6. あとで取得を予約する</h2>
+<p>その場で保存できなかったページは，メニューの<strong>「あとで取得を予約」</strong>で控えておける．</p>
+<p>アプリを開いている間，自動で取り直しを試みる．</p>
+<h2>7. 整理と容量</h2>
+<ul>
+<li><strong>ストレージ管理</strong>（設定）　何にどれだけ使っているかを見る．不要なものを消せる．</li>
+<li><strong>ゴミ箱</strong>（設定）　記録との対応が切れて行き場を失ったファイルを 30 日間預かる． <strong>ライブラリで消したファイルはここを経由せず，その場で消える．</strong></li>
+<li><strong>すべてのデータをエクスポート</strong>（設定）　保存済みファイルと一覧情報を Zip にまとめる． 端末を移すときに使う．</li>
+</ul>
+<h2>8. 通信量を抑える</h2>
+<ul>
+<li><strong>Wi-Fi のみでダウンロード</strong>　有効にすると，Wi-Fi のときだけ取得する．</li>
+<li><strong>同時ダウンロード数</strong>　既定は 3 本．1〜5 本，または無制限を選べる． 多くすれば速くなるとは限らない．失敗が増えるときは減らすとよい．</li>
+</ul>
+<h2>9. 広告を減らす</h2>
+<p><strong>設定 → 広告ブロック</strong>を有効にすると，広告や計測のための読み込みを遮断する．</p>
+<p>約 4 万件の規則を同梱している．</p>
+<p>止められないものもある．<strong>動画の再生前や再生中に差し込まれる広告</strong>は，</p>
+<p>動画そのものと同じ経路で配信されるため，読み込みを止める方式では区別できない．</p>
+<p>サイトによっては表示が崩れることがある．その場合は無効にすること．</p>
+<h2>10. 保護</h2>
+<p><strong>設定 → アプリロック</strong>を有効にすると，起動時と復帰時に Face ID / Touch ID で認証する．</p>
+<p>保存したファイルと保存の履歴が隠れる．</p>
+<h2>11. うまくいかないとき</h2>
+<p class="para">1.　<strong>ダウンロード</strong>タブの「失敗・キャンセル」を見る．</p>
+<p class="para">2.　失敗した項目を開くと，原因の説明が出る．</p>
+<p class="para">3.　<strong>「再試行」</strong>でやり直せる．</p>
+<p class="para">4.　さらに詳しく知りたいときは，項目の<strong>「この項目のログを見る」</strong>を開く．</p>
+<p>記録は端末の中だけに残り，外部へ送られることはない．</p>
+<p>アドレスやファイル名は伏せて保存される．</p>
+<p>開発者へ送るときは，設定の<strong>診断ログ</strong>から共有する．</p>
+<h2>12. できないこと</h2>
+<p>正直に書いておく．</p>
+<ul>
+<li><strong>保護された配信（DRM）の保存．</strong>　Netflix などの定額配信の作品は保存できない． 保護を回避する機能は持っていない．</li>
+<li><strong>再生中に差し込まれる広告の遮断．</strong>　§9 のとおり．</li>
+<li><strong>収集をバックグラウンドで続けること．</strong>　§4.2 のとおり．</li>
+<li><strong>webm・mkv の mp4 への変換．</strong>　この版では利用できない．変換に必要な部品を同梱していない． 対応する再生アプリで開くこと．</li>
+</ul>
+<h2>13. 使い方の約束</h2>
+<p>保存したものは，私的に楽しむ範囲で使うこと．</p>
+<p>配布・公開は，権利者の許諾がない限り行わないこと．</p>
+<p>各サイトの利用規約と法令を守ること．</p>
+<p>詳しくは「利用にあたっての案内」を参照．</p>
+<h2>14. 問合せ</h2>
+<p>電子メール　<a href="mailto:berried_thymes1y@icloud.com">berried_thymes1y@icloud.com</a></p>
+<footer><a href="./">Grabox</a></footer>
+</body>
+</html>
