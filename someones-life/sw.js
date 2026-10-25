@@ -1,4 +1,4 @@
-const CACHE='life-232e588f448c57a0';
+const CACHE='life-2b083865c4979b51';
 const SHELL=['./','index.html','manifest.webmanifest','icon-192.png','icon-512.png'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL))));
 self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(key=>key.startsWith('life-')&&key!==CACHE).map(key=>caches.delete(key)))).then(()=>self.clients.claim())));
