@@ -1,5 +1,5 @@
 // No skipWaiting: a waiting release takes over after the old pages have closed.
-const CACHE='life-efceacc1fdffab85';
+const CACHE='life-19f136ff7ae6585a';
 const SHELL=['index.html','manifest.webmanifest','icon-192.png','icon-512.png'];
 const unavailable=()=>new Response('<!doctype html><html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>誰かの一生</title><p>通信できず，保存した画面も見つかりませんでした。</p><button onclick="location.reload()">もう一度読み込む</button></html>',{status:503,headers:{'Content-Type':'text/html; charset=utf-8'}});
 const local=path=>new URL(path,self.registration.scope).href;
